@@ -1,0 +1,26 @@
+{
+  "name": "nomazon",
+  "version": "1.0.0",
+  "description": "small node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "scss": "node-sass --watch public/styles -o public/styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrispfaff/nomazon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrispfaff/nomazon/issues"
+  },
+  "homepage": "https://github.com/chrispfaff/nomazon#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
