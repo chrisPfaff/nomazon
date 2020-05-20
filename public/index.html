@@ -10,6 +10,9 @@
     <div class="grid-container">
       <header class="header">
         <div class="brand">
+            <button onclick="openMenu()"class="brand">
+                &#9776
+            </button>
           <a href="index.html">Nomazon</a>
         </div>
         <div class="header-links">
@@ -17,16 +20,80 @@
           <a href="signin.html">Sign-In</a>
         </div>
       </header>
+      <aside class="sidebar">
+          <h3>Shopping Catagories</h3>
+          <button class="sidebar-close" onclick="closeMenu()">x</button>
+          <ul>
+              <li>
+                  <a href="/">Pants</a>
+              </li>
+              <li>
+                <a href="/">Shants</a>
+            </li>
+          </ul>
+      </aside>
       <main class="main">
-        <ul>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-        </ul>
+          <div class="content">
+            <ul class="products">
+                <li>
+                    <div class="product">
+                        <img class="product-image" src="https://via.placeholder.com/300" alt="product">
+                        <div class="product-name">Slim Shirt</div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$50</div>
+                        <div class="product-rating">4.3 stars</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="product-image" src="https://via.placeholder.com/300" alt="product">
+                        <div class="product-name">Slim Shirt</div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$50</div>
+                        <div class="product-rating">4.3 stars</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="product-image" src="https://via.placeholder.com/300" alt="product">
+                        <div class="product-name">Slim Shirt</div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$50</div>
+                        <div class="product-rating">4.3 stars</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="product-image" src="https://via.placeholder.com/300" alt="product">
+                        <div class="product-name">Slim Shirt</div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$50</div>
+                        <div class="product-rating">4.3 stars</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="product-image" src="https://via.placeholder.com/300" alt="product">
+                        <div class="product-name">Slim Shirt</div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$50</div>
+                        <div class="product-rating">4.3 stars</div>
+                    </div>
+                </li>
+            </ul>
+          </div>
       </main>
       <footer class="footer">
         circa 2020
       </footer>
     </div>
+    <script>
+        const openMenu =() => {
+            document.querySelector('.sidebar').classList.add('open');
+        }
+        const closeMenu =() => {
+            document.querySelector('.sidebar').classList.remove('open');
+        }
+    </script>
   </body>
 </html>

@@ -1,5 +1,12 @@
 @import "variables.scss";
 
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -66,4 +73,90 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.products {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+
+  & li {
+    display: flex;
+    padding: 0;
+    margin: 1rem;
+    border-bottom: .1rem solid $silk;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  &-image {
+    max-width: 30rem;
+    max-height: 30rem;
+  }
+  &-name {
+    font-weight: bold;
+  }
+  &-brand {
+    font-size: 1.2rem;
+  }
+  &-price {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+.brand button {
+  color: $silk;
+  font-size: 2rem;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+.brand button:hover {
+  color: $black;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  background-color: $forrest;
+  transform: translateX(-20rem);
+  width: 20rem;
+  &-close {
+    position: absolute;
+    right: 1.4rem;
+    top: 1.2rem;
+    background-color: $silk;
+    color: $black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &-close:hover {
+    background-color: $forrest;
+    color: $silk;
+    border: 0.1rem solid $silk;
+
+  }
+  & h3 {
+    padding-left: 2rem;
+    color: $silk;
+  }
+  & a {
+    color: $silk;
+  }
+}
+
+.open {
+  transform: translateX(0);
 }
